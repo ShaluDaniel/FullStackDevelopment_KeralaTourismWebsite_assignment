@@ -67,8 +67,8 @@ var msg=document.getElementById("error");
 function validate() 
 { 
 if (password.value===""||email.value==""||mobile.value==""){
-    alert("fields are empty");
-    return false;
+  alert("fields are empty");
+  return false;
 }
 else
 {
