@@ -100,7 +100,7 @@ if(password.value.match(decimal))
 }
 else
 { 
-     alert('It must be at least 8 characters long and should contain an uppercase, lowercase and number');
+     alert('Password must be at least 8 characters long and should contain an uppercase, lowercase and number');
     return false;
 }
 
