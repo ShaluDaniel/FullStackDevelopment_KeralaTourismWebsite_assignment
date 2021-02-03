@@ -72,8 +72,8 @@ if (password.value===""||email.value==""||mobile.value==""){
 }
 else
 {
-var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
-if(password.value.match(decimal)) 
+   var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
+   if(password.value.match(decimal)) 
     { 
         var decimalmob= /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
             if(mobile.value.match(decimalmob)) 
@@ -102,9 +102,9 @@ if(password.value.match(decimal))
          }
       
           
-}
-else
-{ 
+ }
+ else
+ { 
      alert('Password must be at least 8 characters long and should contain an uppercase, lowercase and number');
     return false;
 }
