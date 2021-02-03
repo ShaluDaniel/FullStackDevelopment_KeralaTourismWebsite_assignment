@@ -67,7 +67,9 @@ var msg=document.getElementById("error");
 function validate() 
 { 
 if (password.value===""||email.value==""||mobile.value==""){
-    alert("fields are empty");}
+    alert("fields are empty");
+    return false;
+}
 else
 {
 var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
