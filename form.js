@@ -13,7 +13,7 @@
 //         messages.push('password must contain an upperCase, lowerCase and a number');
 
 //     }
-    
+       
 //     if((pwd.value.length<=8))
 //     {
 //         messages.push("password must be longer than 8 characters");
@@ -66,7 +66,10 @@ var msg=document.getElementById("error");
 
 function validate() 
 { 
-
+if (password.value===""||email.value==""||mobile.value==""){
+    alert("fields are empty");}
+else
+{
 var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
 if(password.value.match(decimal)) 
     { 
@@ -103,7 +106,7 @@ else
      alert('Password must be at least 8 characters long and should contain an uppercase, lowercase and number');
     return false;
 }
-
+}
 
 
 
